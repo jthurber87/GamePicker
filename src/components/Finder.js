@@ -6,9 +6,11 @@ export default function Finder() {
     const [gameSearch, setGameSearch] = useState()
     const [input, setInput] = useState("")
 
+
     async function handleSubmit(e) {
+        const names = allGames.map(game => game.name)
         await axios.get(`https://api.boardgameatlas.com/api/search?name=${input}&client_id=tub0iinjUh&limit=5`)
-            .then(res => { setGameSearch(res.data.games) })
+            .then(res => { setGameSearch(res.data.games.filter(game => !names.includes(game))) })
             .catch(error => console.log(error))
     }
 
@@ -18,6 +20,7 @@ export default function Finder() {
 
     function handleClick(e) {
         const names = allGames.map(game => game.name)
+
         if (names.includes(e.target.innerText)) {
             alert(`${e.target.innerText} is already in your collection.`)
         } else {
