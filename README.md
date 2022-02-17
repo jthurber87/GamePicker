@@ -1,7 +1,8 @@
-# Getting Started with Create React App
+# Game Picker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I created this app because I have a lot of board games, and usually end up only playing the same five. I wanted something to randomize what I'm playing, while also being able to add to my collection!
 
+<!-- 
 ## Available Scripts
 
 In the project directory, you can run:
@@ -67,4 +68,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
