@@ -20,12 +20,12 @@ export default function Finder() {
 
     function handleClick(e) {
         const names = allGames.map(game => game.name)
-
         if (names.includes(e.target.innerText)) {
             alert(`${e.target.innerText} is already in your collection.`)
         } else {
             alert(`${e.target.innerText} added to games`)
-            allGames.push({ name: e.target.innerText, players: 0 })
+            let game = gameSearch.find(game => game.name === e.target.innerText)
+            allGames.push({ name: game.name, players: [game.min_players, game.max_players] })
             setInput("")
         }
     }
@@ -44,7 +44,7 @@ export default function Finder() {
                 {gameSearch ?
                     gameSearch.map((results, idx) => {
                         return (
-                            <li key={idx} onClick={handleClick}> {results.name}</li>
+                            <li key={idx} onClick={handleClick}>{results.name}</li>
                         )
                     })
                     :

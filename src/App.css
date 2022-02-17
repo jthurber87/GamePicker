@@ -22,6 +22,14 @@
 
 }
 
+.gameCard > h3 {
+  position: absolute;
+  bottom: 80px
+}
+.gameCard > h4 {
+  position: absolute;
+  bottom: 50px
+}
 .gameCard button {
   position: absolute;
   bottom: 0;
