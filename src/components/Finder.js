@@ -36,23 +36,23 @@ export default function Finder() {
 
     return (
         <div className='finder'>
-            <h4>Add a game:</h4>
+            {/* <h4>Add a game:</h4> */}
             <form>
-                <input placeholder="Search..." value={input} onChange={handleInput} onSubmit={handleSubmit} />
+                <input placeholder="Add a game..." value={input} onChange={handleInput} onSubmit={handleSubmit} />
             </form>
             <ul>
                 {gameSearch ?
                     gameSearch.map((results, idx) => {
                         return (
-                            <li key={idx} onClick={handleClick}>{results.name}</li>
+                            <li key={idx} onClick={handleClick} style={{ justifyContent: 'flex-start' }}>{results.name}</li>
                         )
                     })
                     :
                     <ul>
                         <li>
-                            <div class="gooey">
-                                <span class="dot"></span>
-                                <div class="dots">
+                            <div className="gooey">
+                                <span className="dot"></span>
+                                <div className="dots">
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -60,9 +60,9 @@ export default function Finder() {
                             </div>
                         </li>
                         <li>
-                            <div class="gooey">
-                                <span class="dot"></span>
-                                <div class="dots">
+                            <div className="gooey">
+                                <span className="dot"></span>
+                                <div className="dots">
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -70,9 +70,9 @@ export default function Finder() {
                             </div>
                         </li>
                         <li>
-                            <div class="gooey">
-                                <span class="dot"></span>
-                                <div class="dots">
+                            <div className="gooey">
+                                <span className="dot"></span>
+                                <div className="dots">
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -80,9 +80,9 @@ export default function Finder() {
                             </div>
                         </li>
                         <li>
-                            <div class="gooey">
-                                <span class="dot"></span>
-                                <div class="dots">
+                            <div className="gooey">
+                                <span className="dot"></span>
+                                <div className="dots">
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -90,9 +90,9 @@ export default function Finder() {
                             </div>
                         </li>
                         <li>
-                            <div class="gooey">
-                                <span class="dot"></span>
-                                <div class="dots">
+                            <div className="gooey">
+                                <span className="dot"></span>
+                                <div className="dots">
                                     <span></span>
                                     <span></span>
                                     <span></span>
