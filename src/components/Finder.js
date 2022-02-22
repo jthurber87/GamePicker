@@ -46,50 +46,50 @@ export default function Finder() {
                     })
                     :
                     <ul>
-                        <li>
-                            <div class="gooey">
-                                <span class="dot"></span>
-                                <div class="dots">
+                        <li style={{ justifyContent: 'center' }}>
+                            <div className="gooey">
+                                <span className="dot"></span>
+                                <div className="dots">
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <div class="gooey">
-                                <span class="dot"></span>
-                                <div class="dots">
+                        <li style={{ justifyContent: 'center' }}>
+                            <div className="gooey">
+                                <span className="dot"></span>
+                                <div className="dots">
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <div class="gooey">
-                                <span class="dot"></span>
-                                <div class="dots">
+                        <li style={{ justifyContent: 'center' }}>
+                            <div className="gooey">
+                                <span className="dot"></span>
+                                <div className="dots">
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <div class="gooey">
-                                <span class="dot"></span>
-                                <div class="dots">
+                        <li style={{ justifyContent: 'center' }}>
+                            <div className="gooey">
+                                <span className="dot"></span>
+                                <div className="dots">
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <div class="gooey">
-                                <span class="dot"></span>
-                                <div class="dots">
+                        <li style={{ justifyContent: 'center' }}>
+                            <div className="gooey">
+                                <span className="dot"></span>
+                                <div className="dots">
                                     <span></span>
                                     <span></span>
                                     <span></span>

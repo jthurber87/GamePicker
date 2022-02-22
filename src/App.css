@@ -101,3 +101,9 @@ span {
 @keyframes dots {
   50% {transform: translateX(-31px)}
 }
+
+@media (max-width: 844px) {
+  .App {
+    flex-direction: column;
+  }
+}
