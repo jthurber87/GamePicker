@@ -33,9 +33,8 @@ export default function Finder() {
 
     return (
         <div className='finder'>
-            <h4>Add a game:</h4>
             <form>
-                <input placeholder="Search..." value={input} onChange={handleInput} onSubmit={handleSubmit} />
+                <input placeholder="Add a game..." value={input} onChange={handleInput} onSubmit={handleSubmit} />
             </form>
             <ul>
                 {gameSearch ?
