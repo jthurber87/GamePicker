@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import allGames from '../games.js'
 
-export default function Picker() {
+export default function Picker(props) {
     const [game, setGame] = useState({
         // name: allGames[allGames.length - 1].name,
         // players: [0]
