@@ -53,7 +53,7 @@ li:hover {
   cursor: pointer;
 }
 
-table {
+/* table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
@@ -69,7 +69,7 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
-}
+} */
 
 .gooey{
   /* position: absolute;  */
@@ -79,16 +79,16 @@ tr:nth-child(even) {
   height: 35px; 
   /* margin: -20px 0 0 -71px;  */
   background: white; 
-  filter: contrast(10);
+  filter: contrast(20);
   padding-bottom: 2px;
 }
 
 .dot {
   position: absolute;
   width: 15px;
-  height: 16px;
+  height: 15px;
   top: 8px;
-  /* left: 15px; */
+  left: 15px;
   /* filter: blur(4px); */
   background: #000;
   border-radius: 50%;
@@ -100,7 +100,6 @@ tr:nth-child(even) {
   transform: translateX(0);
   margin-top: 8px;
   margin-left: 15px;
-  animation: dots 2.8s infinite;
 }
 span {
   display: block;
@@ -108,16 +107,13 @@ span {
   width: 16px;
   height: 16px;
   margin-left: 16px;
-  filter: blur(4px);
+  filter: blur(3.25px);
   background: #000;
   border-radius: 50%;
 }
 
 @keyframes dot {
-  50% {transform: translateX(80px)}
-}
-@keyframes dots {
-  50% {transform: translateX(-31px)}
+  50% {transform: translateX(95px)}
 }
 
 @media (max-width: 844px) {

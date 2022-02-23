@@ -45,50 +45,55 @@ export default function Finder() {
                     })
                     :
                     <ul>
-                        <li style={{ justifyContent: 'center' }}>
+                        <li style={{ paddingLeft: -20 }}>
                             <div className="gooey">
                                 <span className="dot"></span>
                                 <div className="dots">
+                                    <span></span>
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                 </div>
                             </div>
                         </li>
-                        <li style={{ justifyContent: 'center' }}>
+                        <li style={{ paddingLeft: -20 }}>
                             <div className="gooey">
                                 <span className="dot"></span>
                                 <div className="dots">
+                                    <span></span>
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                 </div>
                             </div>
                         </li>
-                        <li style={{ justifyContent: 'center' }}>
+                        <li style={{ paddingLeft: -20 }}>
                             <div className="gooey">
                                 <span className="dot"></span>
                                 <div className="dots">
+                                    <span></span>
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                 </div>
                             </div>
                         </li>
-                        <li style={{ justifyContent: 'center' }}>
+                        <li style={{ paddingLeft: -20 }}>
                             <div className="gooey">
                                 <span className="dot"></span>
                                 <div className="dots">
+                                    <span></span>
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                 </div>
                             </div>
                         </li>
-                        <li style={{ justifyContent: 'center' }}>
+                        <li style={{ paddingLeft: -20 }}>
                             <div className="gooey">
                                 <span className="dot"></span>
                                 <div className="dots">
+                                    <span></span>
                                     <span></span>
                                     <span></span>
                                     <span></span>
