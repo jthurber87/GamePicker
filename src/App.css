@@ -3,6 +3,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 40px
 }
 
 .gameCard {
@@ -22,6 +23,14 @@
 
 }
 
+.gameCard > h3 {
+  position: absolute;
+  bottom: 80px
+}
+.gameCard > h4 {
+  position: absolute;
+  bottom: 50px
+}
 .gameCard button {
   position: absolute;
   bottom: 0;
@@ -43,9 +52,9 @@ li {
   display: flex;
   border: 1px solid black;
   height: 50px;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
-  padding-left: 5px ;
+  padding-left: 10px ;
 }
 
 li:hover {

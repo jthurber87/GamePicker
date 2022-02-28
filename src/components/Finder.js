@@ -6,9 +6,11 @@ export default function Finder() {
     const [gameSearch, setGameSearch] = useState()
     const [input, setInput] = useState("")
 
+
     async function handleSubmit(e) {
+        const names = allGames.map(game => game.name)
         await axios.get(`https://api.boardgameatlas.com/api/search?name=${input}&client_id=tub0iinjUh&limit=5`)
-            .then(res => { setGameSearch(res.data.games) })
+            .then(res => { setGameSearch(res.data.games.filter(game => !names.includes(game))) })
             .catch(error => console.log(error))
     }
 
@@ -22,7 +24,8 @@ export default function Finder() {
             alert(`${e.target.innerText} is already in your collection.`)
         } else {
             alert(`${e.target.innerText} added to games`)
-            allGames.push({ name: e.target.innerText, players: 0 })
+            let game = gameSearch.find(game => game.name === e.target.innerText)
+            allGames.push({ name: game.name, players: [game.min_players, game.max_players] })
             setInput("")
         }
     }
@@ -40,7 +43,7 @@ export default function Finder() {
                 {gameSearch ?
                     gameSearch.map((results, idx) => {
                         return (
-                            <li key={idx} onClick={handleClick}> {results.name}</li>
+                            <li key={idx} onClick={handleClick} style={{ justifyContent: 'flex-start' }}>{results.name}</li>
                         )
                     })
                     :
