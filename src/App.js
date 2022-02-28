@@ -9,7 +9,6 @@ function App() {
 
   return (
     <div className="App">
-      <img src='../public/image_processing20201020-1513-1a7pmsx.gif' />
       <Picker />
       <Finder />
       {/* <Collection /> */}
